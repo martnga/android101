@@ -39,4 +39,12 @@
          android:layout_below="@+id/b2"
          />
 
+    <!--this layout is to hold the second fragment-->
+    <RelativeLayout
+        android:id="@+id/fr2_id"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/fr1_id"
+        />
+
 </RelativeLayout>
