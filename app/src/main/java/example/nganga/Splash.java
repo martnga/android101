@@ -32,7 +32,7 @@ public class Splash extends Activity {
             }
 
         };
-        startTimer.run();
+        startTimer.start();
     }
 
     @Override
