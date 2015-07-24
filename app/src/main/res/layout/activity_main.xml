@@ -27,8 +27,16 @@
         android:id="@+id/b2"
         android:letterSpacing="10"
         android:textSize="17sp"
-        android:layout_centerVertical="true"
-        android:layout_alignRight="@+id/b1"
-        android:layout_alignEnd="@+id/b1" />
+        android:layout_below="@+id/b1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+       <!--this layout is to hold the first fragment-->
+     <RelativeLayout
+         android:id="@+id/fr1_id"
+         android:layout_width="match_parent"
+         android:layout_height="150dp"
+         android:layout_below="@+id/b2"
+         />
 
 </RelativeLayout>
