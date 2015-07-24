@@ -13,27 +13,29 @@ import android.view.MenuItem;
 
 public class Splash extends Activity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.splash);
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.splash);
 
-        Thread startTimer = new Thread(){
-            public void run(){
-                try {
-                    sleep(5000);
-                    Intent i = new Intent(Splash.this, Main.class);
-                    startActivity(i);
-                    finish();
-                }
-                 catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+    // Intitializing the thread that allows splash image show before the main activity
+
+    Thread startTimer = new Thread(){
+        public void run(){
+            try {
+                sleep(5000);
+                Intent i = new Intent(Splash.this, Main.class);
+                startActivity(i);
+                finish();
             }
+             catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
 
-        };
-        startTimer.start();
-    }
+    };
+    startTimer.start();
+}
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

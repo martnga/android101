@@ -17,6 +17,8 @@
             </intent-filter>-->
         </activity>
 
+       <!--This adds the splash activity to app-->
+
         <activity
             android:name=".Splash"
             android:label="@string/app_name" >
