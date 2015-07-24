@@ -13,22 +13,22 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Fragment one"
         android:id="@+id/b1"
         android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:letterSpacing="10"
+        android:textSize="17sp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Fragment two"
         android:id="@+id/b2"
         android:letterSpacing="10"
         android:textSize="17sp"
-        android:paddingEnd="10dp"
-        android:paddingStart="10dp"
         android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/b1"
-        android:layout_alignStart="@+id/b1" />
+        android:layout_alignRight="@+id/b1"
+        android:layout_alignEnd="@+id/b1" />
 
 </RelativeLayout>
