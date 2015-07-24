@@ -5,14 +5,20 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 
 public class Main extends Activity {
+
+    Button B1,B2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        B1 = (Button)findViewById(R.id.b1);
+        B2 = (Button)findViewById(R.id.b2);
+
     }
 
     @Override
