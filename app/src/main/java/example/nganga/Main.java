@@ -28,6 +28,13 @@ public class Main extends Activity {
             }
         });
 
+        B2.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
     }
 
     @Override
