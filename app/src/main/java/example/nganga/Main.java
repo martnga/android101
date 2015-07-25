@@ -5,7 +5,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
+import android.view.View.OnClickListener;
 
 
 public class Main extends Activity {
@@ -18,6 +20,13 @@ public class Main extends Activity {
         setContentView(R.layout.activity_main);
         B1 = (Button)findViewById(R.id.b1);
         B2 = (Button)findViewById(R.id.b2);
+
+        B1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
     }
 
