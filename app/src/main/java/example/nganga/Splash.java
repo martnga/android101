@@ -21,7 +21,7 @@ protected void onCreate(Bundle savedInstanceState) {
         public void run(){
             try {
                 sleep(5000);
-                Intent i = new Intent(Splash.this, Main.class);
+                Intent i = new Intent(Splash.this, StoryList.class);
                 startActivity(i);
                 finish();
             }
