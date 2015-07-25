@@ -2,6 +2,7 @@ package example.nganga;
 
 import android.app.Activity;
 import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -26,6 +27,8 @@ public class Main extends Activity {
             @Override
             public void onClick(View view) {
                 FragmentManager FM = getFragmentManager();
+                FragmentTransaction FT = FM.beginTransaction();
+                FragmentOne F1 = new FragmentOne();
             }
         });
 
