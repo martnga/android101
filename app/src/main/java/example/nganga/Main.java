@@ -30,6 +30,7 @@ public class Main extends Activity {
                 FragmentTransaction FT = FM.beginTransaction();
                 FragmentOne F1 = new FragmentOne();
                 FT.add(R.id.fr1_id, F1);
+                FT.addToBackStack("f1");
                 FT.commit();
             }
         });
@@ -37,7 +38,12 @@ public class Main extends Activity {
         B2.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                FragmentManager FM = getFragmentManager();
+                FragmentTransaction FT = FM.beginTransaction();
+                FragmentTwo F2 = new FragmentTwo();
+                FT.add(R.id.fr2_id, F2);
+                FT.addToBackStack("f2");
+                FT.commit();
             }
         });
 
