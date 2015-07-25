@@ -3,7 +3,7 @@ package example.nganga;
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.support.v7.app.ActionBarActivity;
+/*import android.support.v7.app.ActionBarActivity;*/
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.view.View.OnClickListener;
 
 
-public class Main extends Activity {
+public class Main extends Activity  {
 
     Button B1,B2;
 
@@ -23,7 +23,7 @@ public class Main extends Activity {
         B1 = (Button)findViewById(R.id.b1);
         B2 = (Button)findViewById(R.id.b2);
 
-        B1.setOnClickListener(new View.OnClickListener() {
+        B1.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentManager FM = getFragmentManager();
@@ -70,4 +70,6 @@ public class Main extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }
