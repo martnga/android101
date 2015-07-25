@@ -1,6 +1,7 @@
 package example.nganga;
 
 import android.app.Activity;
+import android.app.FragmentManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -24,7 +25,7 @@ public class Main extends Activity {
         B1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                FragmentManager FM = getFragmentManager();
             }
         });
 
