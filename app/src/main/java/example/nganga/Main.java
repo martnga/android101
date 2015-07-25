@@ -29,6 +29,8 @@ public class Main extends Activity {
                 FragmentManager FM = getFragmentManager();
                 FragmentTransaction FT = FM.beginTransaction();
                 FragmentOne F1 = new FragmentOne();
+                FT.add(R.id.fr1_id, F1);
+                FT.commit();
             }
         });
 
