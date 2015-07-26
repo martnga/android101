@@ -20,6 +20,8 @@ public class Main extends Activity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //accessing buttons from view to give them functionality
         B1 = (Button)findViewById(R.id.b1);
         B2 = (Button)findViewById(R.id.b2);
 

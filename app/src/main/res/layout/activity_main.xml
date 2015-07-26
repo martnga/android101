@@ -47,4 +47,10 @@
         android:layout_below="@+id/fr1_id"
         />
 
+      <!--Layout to hold storyList-->
+     <android.support.v7.widget.RecyclerView
+         android:id="@id/rvStoryList"
+         android:scrollbars="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" />
 </RelativeLayout>
