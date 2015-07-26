@@ -1,16 +1,14 @@
 package example.nganga;
 
-import android.app.Activity;
-import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 /**
  * Created by nganga on 7/25/15.
  */
-public class StoryListAdapter extends RecyclerView.Adapter<StoryListAdapter.CardViewHolder> {
+public class StoryListAdapter extends RecyclerView.Adapter<CardViewHolder> {
 
     private int mNumCards;
 
@@ -20,12 +18,14 @@ public class StoryListAdapter extends RecyclerView.Adapter<StoryListAdapter.Card
     }
 
     @Override
-    public StoryListAdapter.CardViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return null;
+    public CardViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        LinearLayout v = (LinearLayout) LayoutInflater.from(parent.getContext()).inflate(R.Layout.card_view, parent, false);
+        CardViewHolder Vh = new CardViewHolder(v);
+        return Vh;
     }
 
     @Override
-    public void onBindViewHolder(StoryListAdapter.CardViewHolder holder, int position) {
+    public void onBindViewHolder(CardViewHolder holder, int position) {
 
     }
 
