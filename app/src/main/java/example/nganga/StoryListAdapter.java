@@ -1,38 +1,20 @@
-
 package example.nganga;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+/**
+ * Created by nganga on 7/25/15.
+ */
+public class StoryListAdapter extends Activity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.story_list);
 
-public class Splash extends Activity {
-
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.splash);
-
-    // Intitializing the thread that allows splash image show before the main activity
-
-    Thread startTimer = new Thread(){
-        public void run(){
-            try {
-                sleep(5000);
-                Intent i = new Intent(Splash.this, StoryListAdapter.class);
-                startActivity(i);
-                finish();
-            }
-             catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-
-    };
-    startTimer.start();
-}
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
