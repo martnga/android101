@@ -14,6 +14,11 @@ public class StoryListAdapter extends RecyclerView.Adapter<StoryListAdapter.Card
 
     private int mNumCards;
 
+    public StoryListAdapter(int numCards) {
+       mNumCards = numCards;
+
+    }
+
     @Override
     public StoryListAdapter.CardViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return null;
